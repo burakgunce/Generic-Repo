@@ -15,7 +15,8 @@ namespace GenericRepo.Controllers
 
         public IActionResult Index()
         {
-            List<Lesson> lessons = _lessonRepository.GetAllLessonsWithStudents();
+            //List<Lesson> lessons = _lessonRepository.GetAllLessonsWithStudents();
+            List<Lesson> lessons = _lessonRepository.GetAll().ToList();
             return View(lessons);
         }
 

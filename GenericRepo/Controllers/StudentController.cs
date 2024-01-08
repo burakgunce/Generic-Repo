@@ -26,6 +26,7 @@ namespace GenericRepo.Controllers
             return View(students);
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
             List<School> schools = schoolRepository.GetAll().ToList();
@@ -47,6 +48,7 @@ namespace GenericRepo.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public IActionResult Update(int id)
         {
             List<School> schools = schoolRepository.GetAll().ToList();
