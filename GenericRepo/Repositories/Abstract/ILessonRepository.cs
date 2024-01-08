@@ -5,5 +5,6 @@ namespace GenericRepo.Repositories.Abstract
     public interface ILessonRepository : IRepository<Lesson>
     {
         List<Lesson> GetAllLessonsWithStudents();
+        
     }
 }

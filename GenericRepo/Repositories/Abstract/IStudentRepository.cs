@@ -6,5 +6,6 @@ namespace GenericRepo.Repositories.Abstract
     {
         Student GetByIdIncludeSchool(int id);
         IEnumerable<Student> GetAllIncludedSchool();
+        List<Student> GetAllStudentsWithLesson();
     }
 }

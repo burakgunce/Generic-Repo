@@ -1,1 +1,8 @@
-﻿
+﻿@using GenericRepo.Entities.Concrete;
+@model List<Lesson>
+
+    @foreach (Lesson lesson in Model)
+    {
+        <p>@lesson.Name</p>
+        <a class="btn btn-warning" asp-action="ManageStudents" asp-route-id="@lesson.Id">Öğrencileri Yönet</a>
+    }
