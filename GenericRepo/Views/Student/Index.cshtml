@@ -1,0 +1,11 @@
+﻿@using GenericRepo.Entities.Concrete;
+@model List<Student>
+
+<a class="btn" btn-primary asp-action="Create">Student Ekle</a>
+
+@foreach (Student student in Model)
+{
+    <p>@student.Name</p>
+    <a class="btn btn-primary" asp-action="Update" asp-route-id="@student.Id" asp-route-burak="Deneme">Update</a>
+    <a class="btn btn-primary" asp-action="Delete" asp-route-id="@student.Id">Delete</a>
+}

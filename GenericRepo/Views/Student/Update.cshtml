@@ -1,0 +1,9 @@
+﻿@model StudentUpdateVM
+
+<form asp-action="Update" method="post">
+    <input asp-for="Id" readonly/>
+    <input asp-for="Name" />
+    <input asp-for="ClassName" />
+    <select asp-items="@Model.Schools" asp-for="SchoolId"></select>
+    <input type="submit" value ="guncelle"/>
+</form>

@@ -1,0 +1,9 @@
+﻿@model StudentCreateVM
+
+<form asp-action="Create" method="post">
+    <input asp-for="Name"/>
+    <input asp-for="ClassName"/>
+    <select asp-items="@Model.Schools" asp-for="SchoolId"></select>
+    <input type="submit" value="Create"/>
+    
+</form>
